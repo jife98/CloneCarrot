@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="KGk-i7-Jjw" customClass="MyChatCell" customModule="CloneCarrot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntA-uB-lh4">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="57"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-rC-N96">
+                                <rect key="frame" x="78" y="0.0" width="172" height="57"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS4-98-hdM">
+                                <rect key="frame" x="28" y="36" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mS4-98-hdM" secondAttribute="bottom" id="8QU-S4-MUe"/>
+                            <constraint firstItem="mS4-98-hdM" firstAttribute="leading" secondItem="ntA-uB-lh4" secondAttribute="leading" constant="28" id="MB6-VC-vQf"/>
+                            <constraint firstAttribute="bottom" secondItem="1sg-rC-N96" secondAttribute="bottom" id="fMb-9e-0mt"/>
+                            <constraint firstItem="1sg-rC-N96" firstAttribute="top" secondItem="ntA-uB-lh4" secondAttribute="top" id="i3m-Ck-EjM"/>
+                            <constraint firstAttribute="trailing" secondItem="1sg-rC-N96" secondAttribute="trailing" id="ipe-sq-EDO"/>
+                            <constraint firstItem="1sg-rC-N96" firstAttribute="leading" secondItem="mS4-98-hdM" secondAttribute="trailing" constant="8" symbolic="YES" id="mOC-0E-s0S"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ntA-uB-lh4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ebX-x6-QjT"/>
+                    <constraint firstItem="ntA-uB-lh4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="h1N-IO-W4v"/>
+                    <constraint firstAttribute="trailing" secondItem="ntA-uB-lh4" secondAttribute="trailing" id="kub-lf-ogj"/>
+                    <constraint firstAttribute="bottom" secondItem="ntA-uB-lh4" secondAttribute="bottom" id="xlD-UI-qPb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="76.33587786259541" y="-6.6901408450704229"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
